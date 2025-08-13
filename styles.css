@@ -837,35 +837,31 @@
   .contact-item i.fa-map-marker-alt { top: -12px; }
   .contact-item i.fa-linkedin { top: -12px; }
  
-  /* FINAL MOBILE CONTACT FIX */
-@media (max-width: 600px) {
-
-    .contact-item {
-      display: flex !important;
-      flex-direction: row !important;
-      align-items: center !important;   /* vertical centering */
-      gap: 0.5rem !important;           /* tighter icon gap */
-      padding: 0.8rem 1rem !important;
-    }
+/* UNIVERSAL CONTACT ICON ALIGNMENT FIX — DESKTOP + MOBILE */
+.contact-item {
+    display: flex;
+    align-items: center;         /* center everything vertically */
+    gap: 0.6rem;                  /* tighten gap between icon & text */
+  }
   
-    /* Make sure icon stays centered inline with text */
-    .contact-item i {
-      font-size: 1.3rem !important;
-      line-height: 1 !important;
-      position: relative !important;
-      top: 0 !important;                /* remove misalignment offsets */
-      flex-shrink: 0 !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-    }
+  .contact-item i {
+    width: 24px;                  /* fixed icon box width */
+    height: 24px;                 /* fixed icon box height */
+    display: flex;                /* center icon glyph inside */
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;            /* adjust icon size */
+    line-height: 1;               /* prevent font extra space */
+    position: relative;
+    top: 0;                       /* no vertical offset */
+    flex-shrink: 0;               /* icon never shrinks */
+    color: #1e3a8a;
+  }
   
-    /* Keep text nicely aligned next to icon */
-    .contact-item h3,
-    .contact-item p {
-      margin: 0;
-      padding: 0;
-      line-height: 1.3;
-    }
+  .contact-item h3,
+  .contact-item p {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
   }
   
