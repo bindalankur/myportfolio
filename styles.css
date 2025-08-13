@@ -837,37 +837,35 @@
   .contact-item i.fa-map-marker-alt { top: -12px; }
   .contact-item i.fa-linkedin { top: -12px; }
  
-  /* MOBILE CONTACT SECTION FIXES */
+  /* FINAL MOBILE CONTACT FIX */
 @media (max-width: 600px) {
 
-    /* Tighter vertical stacking for contact-info grid */
-    .contact-content {
-      grid-template-columns: 1fr !important;
-      gap: 1.2rem !important;
-      padding: 0 !important;
-    }
-  
-    /* Contact items: shrink padding, smaller icon/text gap */
     .contact-item {
-      padding: 0.9rem 1rem;
-      gap: 0.7rem !important;       /* Smaller icon/text gap */
+      display: flex !important;
+      flex-direction: row !important;
+      align-items: center !important;   /* vertical centering */
+      gap: 0.5rem !important;           /* tighter icon gap */
+      padding: 0.8rem 1rem !important;
     }
   
-    /* Icons: slightly smaller, better aligned */
+    /* Make sure icon stays centered inline with text */
     .contact-item i {
-      font-size: 1.15rem !important;
-      top: -2px !important;         /* Fine-tune: adjust for visual centering */
+      font-size: 1.3rem !important;
+      line-height: 1 !important;
+      position: relative !important;
+      top: 0 !important;                /* remove misalignment offsets */
+      flex-shrink: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
     }
   
-    /* Contact text: prevent overflow, smaller size */
-    .contact-item h3 {
-      font-size: 1rem;
-      margin-bottom: 0.2rem;
-    }
-  
+    /* Keep text nicely aligned next to icon */
+    .contact-item h3,
     .contact-item p {
-      font-size: 0.99rem;
-      word-break: break-all;  /* Prevent overflow for long labels */
+      margin: 0;
+      padding: 0;
+      line-height: 1.3;
     }
   }
   
