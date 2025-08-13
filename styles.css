@@ -810,5 +810,19 @@
     top: -5.5px; /* Shift the icon up to align with text center */
   }
   
+  /* Contact section icon and text alignment fix */
+.contact-item {
+    display: flex;
+    align-items: center; /* Vertically center icon and text */
+    gap: 0.5rem; /* Reduce gap between icon and text */
+    padding: 1rem 1.5rem; /* Optional: adjust padding for consistent spacing */
+  }
+  
+  .contact-item i {
+    font-size: 1.4rem; /* Consistent icon size */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    color: #1e3a8a; /* Your theme color */
+    margin-right: 0; /* Remove extra right margin if set elsewhere */
+  }
   
     
