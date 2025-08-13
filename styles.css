@@ -827,10 +827,11 @@
   /* CONTACT ICON VERTICAL ALIGNMENT - TUNED TO GREEN LINE */
 .contact-item i {
     position: relative;
-    top: -6px;  /* Raise icons up by 3px — try -4px if needed for exact green line matching */
+    top: -11.5px;  /* Raise icons up by 3px — try -4px if needed for exact green line matching */
     font-size: 1.4rem;
     flex-shrink: 0;
     color: #1e3a8a;
     margin-right: 0;
   }
-  
+  .contact-item i.fa-map-marker-alt { top: -12px; }
+  .contact-item i.fa-linkedin { top: -12px; }
