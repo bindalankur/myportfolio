@@ -52,26 +52,26 @@ body {
 }
 
 .section-title i {
-    color: #2563eb;
+    color: #1e3a8a;
     margin-right: 0.8rem;
     font-size: 0.8em;
 }
 
 .about-text p i {
-    color: #2563eb;
+    color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
 }
 
 .stat i {
     font-size: 2rem;
-    color: #2563eb;
+    color: #1e3a8a;
     margin-bottom: 1rem;
     display: block;
 }
 
 .timeline-content h3 i {
-    color: #2563eb;
+    color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
 }
@@ -89,7 +89,7 @@ body {
 }
 
 .company-description i {
-    color: #2563eb;
+    color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
 }
@@ -101,7 +101,7 @@ body {
 }
 
 .skill-category h3 i {
-    color: #2563eb;
+    color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
 }
@@ -163,7 +163,7 @@ body {
 .nav-logo a {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #1e3a8a;
     text-decoration: none;
     transition: color 0.3s ease;
     display: flex;
@@ -171,7 +171,7 @@ body {
 }
 
 .nav-logo a:hover {
-    color: #1d4ed8;
+    color: #1e40af;
 }
 
 .nav-logo a i {
@@ -196,7 +196,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #2563eb;
+    color: #1e3a8a;
 }
 
 .nav-link::after {
@@ -206,7 +206,7 @@ body {
     height: 2px;
     bottom: -5px;
     left: 0;
-    background-color: #2563eb;
+    background-color: #1e3a8a;
     transition: width 0.3s ease;
 }
 
@@ -233,7 +233,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #374151 100%);
     color: white;
     padding-top: 80px;
 }
@@ -295,14 +295,14 @@ body {
 }
 
 .btn-primary {
-    background: #2563eb;
+    background: #1e3a8a;
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #1e40af;
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
 }
 
 .btn-secondary {
@@ -313,7 +313,7 @@ body {
 
 .btn-secondary:hover {
     background: white;
-    color: #2563eb;
+    color: #1e3a8a;
     transform: translateY(-2px);
 }
 
@@ -363,7 +363,7 @@ section {
     transform: translateX(-50%);
     width: 60px;
     height: 4px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #374151 100%);
     border-radius: 2px;
 }
 
@@ -409,7 +409,7 @@ section {
 .stat h3 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #1e3a8a;
     margin-bottom: 0.5rem;
 }
 
@@ -467,7 +467,7 @@ section {
     top: 50%;
     width: 20px;
     height: 20px;
-    background: #2563eb;
+    background: #1e3a8a;
     border-radius: 50%;
     transform: translateY(-50%);
 }
@@ -485,7 +485,7 @@ section {
 
 .timeline-content h4 {
     font-size: 1.1rem;
-    color: #2563eb;
+    color: #1e3a8a;
     margin-bottom: 0.5rem;
 }
 
@@ -518,7 +518,7 @@ section {
     content: '▸';
     position: absolute;
     left: 0;
-    color: #2563eb;
+    color: #1e3a8a;
     font-weight: bold;
 }
 
@@ -575,7 +575,7 @@ section {
 }
 
 .skill-item:hover {
-    background: #2563eb;
+    background: #1e3a8a;
     color: white;
     transform: scale(1.05);
 }
@@ -616,7 +616,7 @@ section {
 
 .contact-item i {
     font-size: 1.5rem;
-    color: #2563eb;
+    color: #1e3a8a;
     width: 40px;
     text-align: center;
 }
@@ -664,7 +664,7 @@ section {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #2563eb;
+    border-color: #1e3a8a;
     background: white;
 }
 
@@ -685,7 +685,7 @@ section {
 
 .form-group input:focus + i,
 .form-group textarea:focus + i {
-    color: #2563eb;
+    color: #1e3a8a;
 }
 
 /* Footer */
