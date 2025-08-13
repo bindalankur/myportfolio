@@ -874,3 +874,20 @@ section {
 .skill-item.break-line {
     flex-basis: 100%; /* forces Jenkins to the next line */
 }
+
+/* Force Jenkins to appear on a new row without stretching */
+.skill-item.break-line::before {
+    content: "";
+    flex-basis: 100%;  /* invisible full-width spacer before Jenkins */
+}
+
+.skill-item.break-line {
+    flex: 0 0 auto;    /* don't grow or shrink */
+    width: auto;       /* just as wide as needed for its content */
+}
+.skill-items + .skill-items {
+    margin-top: 0.5rem;
+}
+
+
+
