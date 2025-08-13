@@ -792,4 +792,17 @@
   .nav-link:hover::after {
     transform: scaleX(1);
   }
+  /* ===== Skill section alignment fixes ===== */
+
+/* Force all skill headings (icon + text) to align to the left */
+.skill-heading {
+    justify-content: flex-start !important;
+  }
+  
+  /* Fine-tune Tools & Technologies icon vertical position */
+  .skill-heading i.fa-laptop-code {
+    position: relative;
+    top: 1px; /* nudges icon slightly down for visual centering */
+  }
+  
     
