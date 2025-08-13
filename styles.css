@@ -866,4 +866,11 @@ section {
     position: relative;
     top: -1px;
   }
-  
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap; /* allows breaking */
+}
+
+.skill-item.break-line {
+    flex-basis: 100%; /* forces Jenkins to the next line */
+}
