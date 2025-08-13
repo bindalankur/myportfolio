@@ -805,9 +805,9 @@
     top: 1px; /* nudges icon slightly down for visual centering */
   }
   /* Perfect vertical alignment for Tools & Technologies icon */
-.skill-heading i.fa-tools {
+.skill-heading i.fa-cogs {
     position: relative;
-    top: -5px; /* Shift the icon up to align with text center */
+    top: -7px; /* Shift the icon up to align with text center */
   }
   
   
