@@ -824,5 +824,13 @@
     color: #1e3a8a; /* Your theme color */
     margin-right: 0; /* Remove extra right margin if set elsewhere */
   }
+  /* CONTACT ICON VERTICAL ALIGNMENT - TUNED TO GREEN LINE */
+.contact-item i {
+    position: relative;
+    top: -6px;  /* Raise icons up by 3px — try -4px if needed for exact green line matching */
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    color: #1e3a8a;
+    margin-right: 0;
+  }
   
-    
