@@ -833,5 +833,40 @@
     color: #1e3a8a;
     margin-right: 0;
   }
+  .contact-item i.fa-envelope { top: -12px; }
   .contact-item i.fa-map-marker-alt { top: -12px; }
   .contact-item i.fa-linkedin { top: -12px; }
+  /* MOBILE CONTACT SECTION FIXES */
+@media (max-width: 600px) {
+
+    /* Tighter vertical stacking for contact-info grid */
+    .contact-content {
+      grid-template-columns: 1fr !important;
+      gap: 1.2rem !important;
+      padding: 0 !important;
+    }
+  
+    /* Contact items: shrink padding, smaller icon/text gap */
+    .contact-item {
+      padding: 0.9rem 1rem;
+      gap: 0.7rem !important;       /* Smaller icon/text gap */
+    }
+  
+    /* Icons: slightly smaller, better aligned */
+    .contact-item i {
+      font-size: 1.15rem !important;
+      top: -2px !important;         /* Fine-tune: adjust for visual centering */
+    }
+  
+    /* Contact text: prevent overflow, smaller size */
+    .contact-item h3 {
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+  
+    .contact-item p {
+      font-size: 0.99rem;
+      word-break: break-all;  /* Prevent overflow for long labels */
+    }
+  }
+  
