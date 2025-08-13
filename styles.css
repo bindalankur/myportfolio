@@ -837,25 +837,30 @@
   .contact-item i.fa-map-marker-alt { top: -12px; }
   .contact-item i.fa-linkedin { top: -12px; }
  
-/* UNIVERSAL CONTACT ICON ALIGNMENT FIX — DESKTOP + MOBILE */
+/* FINAL CONTACT ICON FIX */
 .contact-item {
     display: flex;
-    align-items: center;         /* center everything vertically */
-    gap: 0.6rem;                  /* tighten gap between icon & text */
+    align-items: center;    /* true vertical centering */
+    gap: 0.5rem;            /* small, consistent gap */
   }
   
   .contact-item i {
-    width: 24px;                  /* fixed icon box width */
-    height: 24px;                 /* fixed icon box height */
-    display: flex;                /* center icon glyph inside */
+    flex-shrink: 0;         /* never let icon squish */
+    width: 28px;            /* fixed square box for icon */
+    height: 28px;
+    display: flex;          /* center icon inside box */
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;            /* adjust icon size */
-    line-height: 1;               /* prevent font extra space */
-    position: relative;
-    top: 0;                       /* no vertical offset */
-    flex-shrink: 0;               /* icon never shrinks */
-    color: #1e3a8a;
+    font-size: 1.3rem;      /* icon size */
+    line-height: 1;
+    position: static;       /* remove previous offsets */
+    color: #1e3a8a;         /* brand color */
+  }
+  
+  .contact-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center text block */
   }
   
   .contact-item h3,
