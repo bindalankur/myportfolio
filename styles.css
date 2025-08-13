@@ -26,41 +26,52 @@ body {
 .fas, .fab {
     margin-right: 0.5rem;
     transition: all 0.3s ease;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 .nav-link i {
     margin-right: 0.3rem;
     font-size: 0.9rem;
+    vertical-align: baseline;
 }
 
 .hero-title i {
     color: #ffd700;
     margin-right: 0.8rem;
     font-size: 0.8em;
+    vertical-align: baseline;
 }
 
 .hero-subtitle i {
     color: #ffd700;
     margin-right: 0.5rem;
     font-size: 0.9em;
+    vertical-align: baseline;
 }
 
 .hero-description i {
     color: #ffd700;
     margin-right: 0.5rem;
-    font-size: 0.9em;
+    font-size: 1em;
+    vertical-align: baseline;
+    position: relative;
+    top: 2px;
 }
 
 .section-title i {
     color: #1e3a8a;
     margin-right: 0.8rem;
     font-size: 0.8em;
+    vertical-align: baseline;
 }
 
 .about-text p i {
     color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
+    vertical-align: baseline;
+    flex-shrink: 0;
 }
 
 .stat i {
@@ -74,42 +85,50 @@ body {
     color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
+    vertical-align: baseline;
 }
 
 .timeline-content h4 i {
     color: #6b7280;
     margin-right: 0.5rem;
     font-size: 0.8em;
+    vertical-align: baseline;
 }
 
 .timeline-date i {
     color: #9ca3af;
     margin-right: 0.3rem;
     font-size: 0.8em;
+    vertical-align: baseline;
 }
 
 .company-description i {
     color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
+    vertical-align: baseline;
 }
 
 .timeline-content ul li i {
     color: #10b981;
     margin-right: 0.5rem;
     font-size: 0.8em;
+    vertical-align: baseline;
+    flex-shrink: 0;
 }
 
 .skill-category h3 i {
     color: #1e3a8a;
     margin-right: 0.5rem;
     font-size: 0.9em;
+    vertical-align: baseline;
 }
 
 .skill-item i {
     color: #6b7280;
     margin-right: 0.3rem;
     font-size: 0.8em;
+    vertical-align: baseline;
 }
 
 .contact-form .form-group {
@@ -252,7 +271,7 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    animation: fadeInUp 1s ease;
+    font-family: 'Georgia', serif;
     display: flex;
     align-items: center;
 }
@@ -262,7 +281,6 @@ body {
     font-weight: 400;
     margin-bottom: 1.5rem;
     opacity: 0.9;
-    animation: fadeInUp 1s ease 0.2s both;
     display: flex;
     align-items: center;
 }
@@ -272,15 +290,11 @@ body {
     margin-bottom: 2rem;
     opacity: 0.8;
     line-height: 1.8;
-    animation: fadeInUp 1s ease 0.4s both;
-    display: flex;
-    align-items: flex-start;
 }
 
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    animation: fadeInUp 1s ease 0.6s both;
 }
 
 .btn {
@@ -321,7 +335,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: fadeInRight 1s ease 0.8s both;
 }
 
 .profile-image {
@@ -382,8 +395,7 @@ section {
     margin-bottom: 1.5rem;
     color: #4b5563;
     line-height: 1.8;
-    display: flex;
-    align-items: flex-start;
+    display: block;
 }
 
 .about-stats {
@@ -481,18 +493,24 @@ section {
     font-weight: 600;
     color: #1f2937;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .timeline-content h4 {
     font-size: 1.1rem;
     color: #1e3a8a;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .timeline-date {
     color: #6b7280;
     font-weight: 500;
     margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
 }
 
 .company-description {
@@ -501,6 +519,7 @@ section {
     margin-bottom: 1rem;
     font-size: 0.95rem;
     line-height: 1.5;
+    display: block;
 }
 
 .timeline-content ul {
@@ -511,15 +530,11 @@ section {
     padding: 0.5rem 0;
     color: #4b5563;
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 0;
 }
 
 .timeline-content li::before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: #1e3a8a;
-    font-weight: bold;
+    display: none;
 }
 
 /* Skills Section */
@@ -630,6 +645,17 @@ section {
 
 .contact-item p {
     color: #6b7280;
+}
+
+.contact-item p a {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item p a:hover {
+    color: #1e3a8a;
+    text-decoration: underline;
 }
 
 .contact-form {
