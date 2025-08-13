@@ -837,36 +837,33 @@
   .contact-item i.fa-map-marker-alt { top: -12px; }
   .contact-item i.fa-linkedin { top: -12px; }
  
-/* FINAL CONTACT ICON FIX */
-.contact-item {
-    display: flex;
-    align-items: center;    /* true vertical centering */
-    gap: 0.5rem;            /* small, consistent gap */
+/* ===== Final Polish CSS for Desktop Only ===== */
+
+/* Standardize top and bottom padding for all sections */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   
-  .contact-item i {
-    flex-shrink: 0;         /* never let icon squish */
-    width: 28px;            /* fixed square box for icon */
-    height: 28px;
-    display: flex;          /* center icon inside box */
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;      /* icon size */
-    line-height: 1;
-    position: static;       /* remove previous offsets */
-    color: #1e3a8a;         /* brand color */
+  /* Soften skill card hover shadow for a cleaner look */
+  .skill-card:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   }
   
-  .contact-item div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* vertically center text block */
-  }
-  
-  .contact-item h3,
-  .contact-item p {
-    margin: 0;
-    padding: 0;
+  /* Slightly increase line-height on experience job titles for better wrapping */
+  .experience-title {
     line-height: 1.4;
+  }
+  
+  /* Add a smooth hover scale effect on all buttons */
+  .btn:hover {
+    transform: scale(1.03);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Tiny optical vertical nudge for skill heading icons */
+  .skill-heading i {
+    position: relative;
+    top: -1px;
   }
   
